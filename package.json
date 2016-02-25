@@ -1,0 +1,14 @@
+{
+  "name": "koa-postgres",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Build web application with Koa and Postgres",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "2.0.0-alpha.3"
+  }
+}
