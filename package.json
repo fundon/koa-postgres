@@ -4,11 +4,43 @@
   "private": true,
   "description": "Build web application with Koa and Postgres",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "npm start & webpack-dev-server --history-api-fallback --hot --inline --progress --colors"
   },
   "author": "Fangdun Cai <cfddream@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "2.0.0-alpha.3"
+    "bootstrap-sass": "3.3.6",
+    "bulma": "0.0.15",
+    "extract-text-webpack-plugin": "1.0.1",
+    "jquery": "2.2.1",
+    "koa": "2.0.0-alpha.3",
+    "koa-bodyparser": "3.0.0",
+    "koa-morgan": "1.0.1",
+    "koa-router": "7.0.1",
+    "koa-serve-static": "1.0.0",
+    "nunjucks": "2.3.0",
+    "pg-promise": "3.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "3.2.0",
+    "babel-loader": "6.2.3",
+    "babel-preset-es2015": "6.5.0",
+    "bootstrap-loader": "1.0.8",
+    "css-loader": "0.23.1",
+    "file-loader": "0.8.5",
+    "imports-loader": "0.6.5",
+    "node-sass": "3.4.2",
+    "raw-loader": "0.5.1",
+    "resolve-url-loader": "1.4.3",
+    "sass-loader": "3.1.2",
+    "style-loader": "0.13.0",
+    "url-loader": "0.5.7",
+    "webpack": "1.12.14",
+    "webpack-dev-server": "1.14.1"
+  },
+  "engines": {
+    "node": "5"
   }
 }
