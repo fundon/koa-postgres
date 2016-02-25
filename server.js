@@ -27,6 +27,7 @@ router
 
 router
   .get('/stuq', (ctx, next) => {
+    // context
     ctx.body = 'Hello StuQ!'
   })
 
@@ -45,7 +46,7 @@ app.context.render = function render(view, options) {
 
 // 返回默认内容
 app.use(ctx => {
-  return ctx.render('index.html').then((body) => { ctx.body = body })
+  return ctx.render('index.html', { title: '大家好!' }).then((body) => { ctx.body = body })
 })
 
 // 监听 3000 端口
